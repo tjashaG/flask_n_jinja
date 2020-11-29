@@ -14,10 +14,11 @@
 <ol>
     <div class="container">
         <h2>How to loop through a list?</h2>
-
+    {% raw %}
     {% for user in users %}
     <li>{{ user }}</li>
     {% endfor %}
+    {% endraw %}
     </div>
 </ol>
 
@@ -27,9 +28,11 @@
 <div class="container">
     <h3>How to loop through a dictionary?</h3>
 <ul>
+    {% raw %}
     {% for k, v in users_info.items() %}
 <li>{{ k }} is a {{ v }} by profession</li>
     {% endfor %}
+    {% endraw %}
 </ul>
     {% endblock main %}
 </div>
