@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %} The Jinja Playground {% endblock %}
+
+{% block container %}
+<div class="container">
+    <h1>Welcome to the Jinja Playground</h1>
+</div>
+<hr>
+<div class="container">
+    <p>Let's learn something about Jinja, shall we?</p>
+</div>
+
+<ol>
+    <div class="container">
+        <h2>How to loop through a list?</h2>
+
+    {% for user in users %}
+    <li>{{ user }}</li>
+    {% endfor %}
+    </div>
+</ol>
+
+    {% endblock container %}
+
+    {% block main %}
+<div class="container">
+    <h3>How to loop through a dictionary?</h3>
+<ul>
+    {% for k, v in users_info.items() %}
+<li>{{ k }} is a {{ v }} by profession</li>
+    {% endfor %}
+</ul>
+    {% endblock main %}
+</div>

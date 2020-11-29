@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %} The ABOOT ME page {% endblock %}
+
+{% block container %}
+<div class="container">
+<h1>This is the ABOOT ME page</h1>
+<h4>This is how you use a variable:</h4>
+<hr>
+<h4>My name is {{ my_name }}</h4>
+<h6>I am {{ my_age }} years old, but I wish I were {{ my_age / 2 }}!</h6>
+<hr>
+</div>
+{% endblock container %}
